@@ -1,0 +1,10 @@
+<h1>Get names</h1>
+<button>Get names</button>
+<table>
+    <tr *ngFor="let user of users">
+        <td><img src="{{user.avatar}}"></td>
+        <td>
+            {{user.first_name}}, {{user.last_name}}<br> {{user.email}}
+        </td>
+    </tr>
+</table>

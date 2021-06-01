@@ -10,15 +10,15 @@ export class EditEmployeeComponent implements OnInit {
   constructor() { } 
   departments = [
 
-    { id: 1, name: "Payroll" },
+    { id: 1, name: "UI/UX Department" },
     
-    { id: 2, name: "Internal" },
+    { id: 2, name: "Backend Development" },
     
-    { id: 3, name: "HR" }];
+    { id: 3, name: "Human Resource" }];
 
     
     employee:Employee={id:1,
-      name:"",salary:0,permanent:true,department:this.departments[0],Skills:[{id:1,name:"Html"},{id:2,name:"CSS"},{id:3,name:"Javascript"}]
+      name:"Sumit Kumar",salary:0,permanent:true,department:this.departments[0],Skills:[{id:1,name:"Html"},{id:2,name:"CSS"},{id:3,name:"Javascript"}]
     };
 
   ngOnInit(): void {

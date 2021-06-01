@@ -1,0 +1,12 @@
+<div class="container-fluid ret">
+    <div>
+        <p class="lead">Select the user you want to see details of</p>
+    </div>
+</div>
+<div class="container-fluid bet">
+    <ul class="userList list-inline">
+        <li *ngFor="let userDet of user" class="list-group-item-action">
+            <span><a routerLink="/users/{{userDet.id}}" class="list-group-item list-group-item-dark">{{userDet.name}}</a></span>
+        </li>
+    </ul>
+</div>

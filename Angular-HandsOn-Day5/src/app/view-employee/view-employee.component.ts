@@ -12,11 +12,11 @@ export class ViewEmployeeComponent implements OnInit {
   dateOfBirth:any;
   constructor() { 
     
-    this.employee={id:1,
-      name:"Ryuzaki",salary:10000,permanent:false,department:{id:1,name:"payroll"},Skills:[{id:1,name:"Html"},{id:2,name:"CSS"},{id:3,name:"Javascript"}]
+    this.employee={id:905086,
+      name:"Sumit Kumar",salary:500000,permanent:false,department:{id:854321,name:"UI/UX"},Skills:[{id:1,name:"Angular"},{id:2,name:"CSS"},{id:3,name:"Javascript"}]
     };
     const datepipe:DatePipe=new DatePipe('en-US');
-    this.dateOfBirth=datepipe.transform(new Date('12/31/2000'),'MM-dd-YYYY');
+    this.dateOfBirth=datepipe.transform(new Date('01/31/198'),'MM-dd-YYYY');
   }
 
   ngOnInit(): void {
